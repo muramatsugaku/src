@@ -21,7 +21,7 @@ public class Q2 {
         //計算と結果表示
         //Mathクラスのpow()メソッド
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/Math.html#pow(double,double)
-        System.out.println("身長：" + height * 100 + "cm 体重：" + weight + "kg");
+        System.out.println("\n身長：" + height * 100 + "cm 体重：" + weight + "kg");
         System.out.println("BMI:" +  weight / Math.pow(height,2));
         System.out.println("適性体重：" + (Math.pow(height,2) * 22) + "kg");
         System.out.println("現在との差(" + (weight - Math.pow(height,2) * 22) + "kg)");
@@ -29,9 +29,9 @@ public class Q2 {
         //参考
         //書式付き書式付き文字列
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)
-        System.out.println(String.format("\n身長：%.2fm　体重：%.2fkg",height * 100,weight ));
+        System.out.println(String.format("\n身長：%.1fcm　体重：%.1fkg",height * 100,weight));
         System.out.println(String.format("BMI:%.2f",weight / Math.pow(height,2)));
         System.out.println(String.format("適性体重：%.2fkg",Math.pow(height,2) * 22));
-        System.out.println(String.format("現在との差(%.2fkg)",weight - Math.pow(height,2) * 22));
+        System.out.println(String.format("現在との差(%s%.2fkg)",weight - Math.pow(height,2) * 22 > 0 ? "+":"",weight - Math.pow(height,2) * 22));
     }
 }

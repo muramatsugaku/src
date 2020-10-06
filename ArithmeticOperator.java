@@ -1,6 +1,6 @@
 package ex1;
 
-public class ArithmeticOparator {
+public class ArithmeticOperator {
     public static void main(String[] args) {
         //算術演算子
         int a = 5,b = 3;

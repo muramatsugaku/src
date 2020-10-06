@@ -20,6 +20,7 @@ public class Literal {
         float floatNum2 = 3f;//float型のリテラル
         double doubleNum = 3.14;//デフォルトでdouble型
         double doubleNum2 = 3d;//double型のリテラル
+        double doubleNum3 = 0.314e+1;//指数表記 0.314*10^1
 
         System.out.println("浮動小数点");
         System.out.println(longNum);//1
@@ -27,6 +28,7 @@ public class Literal {
         System.out.println(floatNum2);//3.0
         System.out.println(doubleNum);//3.14
         System.out.println(doubleNum2);//3.0
+        System.out.println(doubleNum3);//3.14
 
         //文字リテラル
         char c1 = 'A';//文字によるリテラル

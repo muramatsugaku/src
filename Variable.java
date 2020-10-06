@@ -1,3 +1,5 @@
+package ex1;
+
 public class Variable {
     public static void main(String[] args) {
         //プリミティブ（基本）変数

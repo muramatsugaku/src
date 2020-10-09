@@ -21,9 +21,18 @@ public class LogicalOperator {
         System.out.println("t or t:" + (t || t));//true
         System.out.println("t or f:" + (t || f));//true
         System.out.println("f or t:" + (f || t));//true
-        System.out.println("f or f:" + (f || f));//true
+        System.out.println("f or f:" + (f || f));//false
 
         //演算の優先順位は否定＞論理積＞論理和
-        System.out.println((false || true && !true));//
+        System.out.println((false || true && !true));//false
+
+        //数値の範囲を判定する
+        //例　1～100の範囲
+        int n = 50;
+        System.out.println(n >= 1 && n <= 100);
+        System.out.println(!(n < 1 || n > 100));
+        //例　1～100以外
+        System.out.println(n < 1 || n > 100);
+        System.out.println(!(n >= 1 && n <= 100));
     }
 }

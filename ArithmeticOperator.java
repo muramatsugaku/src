@@ -16,5 +16,23 @@ public class ArithmeticOperator {
         System.out.println(c + " * " + d + " = " + (c*d));
         System.out.println(c + " / " + d + " = " + (c/d));
         System.out.println(c + " % " + d + " = " + (c%d));
+
+        //インクリメント・デクリメント
+        int e = 1,f = 2;
+        e++;//e = 2
+        ++f;//f = 3
+        System.out.println("e:" + e);//2
+        System.out.println("f:" + f);//3
+        System.out.println("e++ + ++f:" + (e++ + ++f));//2+4=6
+        System.out.println("e:" + e);//3
+        System.out.println("f:" + f);//4
+
+        //代入演算子
+        //例 x = x + 1;
+        //x += 1;　と記述できる
+        int x = 1;
+        System.out.println(x+=1);//2
+        System.out.println(x*=10);//20
+        System.out.println(x%=8);//4
     }
 }

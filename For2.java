@@ -1,9 +1,12 @@
 package ex1;
 
+import java.util.Arrays;
+
 public class For2 {
     public static void main(String[] args) {
         //配列の処理
         double[] array = {80,40,50,100,0};
+        System.out.println("Data:" + Arrays.toString(array));
 
         //合計
         double sum = 0;

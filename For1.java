@@ -19,6 +19,11 @@ public class For1 {
             System.out.println("array[" + i + "]:" + array[i]);
         }
 
+        double[] array2 = {22.4,-10.5,0.25};
+        for (int i = 0; i < array2.length; i++) {
+            System.out.println("array2[" + i + "]:" + array2[i]);
+        }
+
         //拡張for命令(foreach)
         //さらに配列用の記述がある
         //int value 値を取り出す変数（配列と同じ型であること）

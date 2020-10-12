@@ -32,7 +32,7 @@ public class Array1 {
                 "えんどう",
                 "おおた",
         };
-        System.out.println();
+
         System.out.println("array6[0]:" + array6[0]);//あいざわ
         System.out.println("array6[1]:" + array6[1]);//いいだ
         System.out.println("array6[2]:" + array6[2]);//null

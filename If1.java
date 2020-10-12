@@ -19,5 +19,15 @@ public class If1 {
             //条件がfalseの場合
             System.out.println("入力値:" + num + "は" + min + "~" + max + "の範囲外です");
         }
+
+        if (num >= min) {
+            if (num <= max) {
+                System.out.println("入力値:" + num + "は" + min + "~" + max + "の範囲内です");
+            } else {
+                System.out.println("入力値:" + num + "は" + min + "~" + max + "の範囲外です");
+            }
+        } else {
+            System.out.println("入力値:" + num + "は" + min + "~" + max + "の範囲外です");
+        }
     }
 }

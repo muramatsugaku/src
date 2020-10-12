@@ -10,7 +10,7 @@ public class Q9 {
             System.out.println("sum:value:" + sum + ":" + v);
             v += 3;
         }
-        v -= 3;//誤差修正
+        v -= 3;//誤差修正（加算が一回多いので）
         System.out.println("sum:value:" + sum + ":" + v);
 
         System.out.println("------------for------------");
@@ -20,6 +20,7 @@ public class Q9 {
             System.out.println("sum:value:" + sum + ":" + i);
         }
         //コンパイルエラー
+        //変数iは参照範囲外、有効なのはforブロック内のみ
         //System.out.println("sum:value:" + sum + ":" + i);
     }
 }

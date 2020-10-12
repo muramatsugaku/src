@@ -21,5 +21,12 @@ public class Q8 {
 
         ネストしたfor命令を使用する
          */
+
+        for (int i = 1; i < 10; i++) {
+            for (int j = 1; j < 10; j++) {
+                System.out.print(String.format("%d*%d=%2d ",i,j,i*j));//改行しない
+            }
+            System.out.println();
+        }
     }
 }

@@ -31,4 +31,9 @@ class Student {
     public int getCl() {
         return cl;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%d %s %d %2d",no,name,grade,cl);
+    }
 }

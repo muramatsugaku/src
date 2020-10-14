@@ -10,5 +10,8 @@ class Q10 {
         System.out.println(String.format("%d %s %d %2d",st2.getNo(),st2.getName(),st2.getGrade(),st2.getCl()));
         System.out.println(String.format("%d %s %d %2d",st3.getNo(),st3.getName(),st3.getGrade(),st3.getCl()));
 
+        System.out.println(st1);
+        System.out.println(st2);
+        System.out.println(st3);
     }
 }

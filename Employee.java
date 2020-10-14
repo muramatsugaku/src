@@ -7,7 +7,7 @@ public class Employee {
     private String gender;
     private int age;
 
-    //コンストラクター
+    //コンストラクタ
     public Employee(int id, String name, String gender, int age) {
         this.id = id;
         this.name = name;
@@ -31,4 +31,5 @@ public class Employee {
     public int getAge() {
         return age;
     }
+
 }

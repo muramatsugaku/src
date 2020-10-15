@@ -1,6 +1,6 @@
 package ex2.inheritance;
 
-class SubClass extends SuperClass{
+class SubClass extends SuperClass {
     private int num2;
 
     public SubClass(int num, int num2) {

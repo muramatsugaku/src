@@ -57,6 +57,8 @@ public class Employee {
                 id,name,gender,age,earnings1,earnings2,earnings3,sum(),ave());
     }
 
+
+
     /**
      * 売上を合計するメソッド
      * @return 3カ月の売上合計 int

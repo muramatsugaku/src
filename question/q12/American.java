@@ -7,6 +7,6 @@ class American extends Human {
 
     @Override
     public void hello() {
-        System.out.println("");
+        System.out.println("Hello.My name is " + name + ".");
     }
 }

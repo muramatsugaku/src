@@ -21,7 +21,7 @@ public class While1 {
         i = 0;
         while (i < array.length) {
             System.out.println("array[" + i + "]:" + array[i]);
-            i++;
+            //i++;
         }
     }
 }

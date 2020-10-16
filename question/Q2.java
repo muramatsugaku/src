@@ -27,7 +27,7 @@ public class Q2 {
         System.out.println("現在との差(" + (weight - Math.pow(height,2) * 22) + "kg)");
 
         //参考
-        //書式付き書式付き文字列
+        //書式付き文字列
         //https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/lang/String.html#format(java.lang.String,java.lang.Object...)
         System.out.println(String.format("\n身長：%.1fcm　体重：%.1fkg",height * 100,weight));
         System.out.println(String.format("BMI:%.2f",weight / Math.pow(height,2)));

@@ -17,7 +17,7 @@ public class Array2 {
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
 
-        //バイナリーサーチ
+        //バイナリーサーチ（事前にソートが必要）
         //見つかった場所のインデックス
         System.out.println(Arrays.binarySearch(array,30));//2
         System.out.println(Arrays.binarySearch(array,0));//-1

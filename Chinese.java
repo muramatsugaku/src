@@ -1,6 +1,6 @@
 package question.q11;
 
-public class Chinese extends Human {
+class Chinese extends Human {
     public Chinese(String name) {
         super(name);
     }

@@ -12,6 +12,6 @@ class Human {
     }
 
     public void hello() {
-        System.out.println("Hello.My name is " + name);
+        System.out.println("Hello.My name is " + name + ".");
     }
 }

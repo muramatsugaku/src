@@ -50,6 +50,9 @@ class ListSample1 {
         System.out.println(stringList);
         System.out.println("[1]~[3]:" + stringList.subList(1,3));
 
+        //配列に変換
+        String[] stringArray = (String[]) stringList.toArray();
+
         //データが含まれているか
         System.out.println("Bobはいるか？:" + stringList.contains("Bob"));
         stringList.remove("Bob");

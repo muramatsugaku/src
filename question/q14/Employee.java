@@ -1,5 +1,10 @@
-package ex2;
+package question.q14;
 
+/**
+ * 変更
+ * sum() -> getSum()
+ * ave() -> getAve()
+ */
 class Employee {
     //フィールド
     private int id;
@@ -54,7 +59,7 @@ class Employee {
     @Override
     public String toString() {
         return String.format("%d %s %s %d %d %d %d %d %.2f",
-                id,name,gender,age,earnings1,earnings2,earnings3,sum(),ave());
+                id,name,gender,age,earnings1,earnings2,earnings3,getSum(),getAve());
     }
 
 
@@ -63,7 +68,7 @@ class Employee {
      * 売上を合計するメソッド
      * @return 3カ月の売上合計 int
      */
-    public int sum() {
+    public int getSum() {
         return earnings1 + earnings2 + earnings3;
     }
 
@@ -71,7 +76,7 @@ class Employee {
      * 売上の平均を求めるメソッド
      * @return　3カ月の売り上げ平均 double
      */
-    public double ave() {
-        return sum() / 3.0;
+    public double getAve() {
+        return getSum() / 3.0;
     }
 }

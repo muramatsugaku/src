@@ -14,11 +14,10 @@ class SetSample2 {
         //キーボードから入力
         Scanner sc = new Scanner(System.in);
         boolean flag = false;
-        Integer input = null;
 
         do {
             System.out.println("Input number(1~10):");
-            input = Integer.valueOf(sc.nextInt());
+            Integer input = Integer.valueOf(sc.nextInt());
             flag = integerSet.add(input);
             if (flag) {
                 System.out.println("登録されました");

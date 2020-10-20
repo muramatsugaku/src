@@ -3,12 +3,14 @@ package ex2.listSample;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 class ListSample1 {
     public static void main(String[] args) {
         //宣言
         List<String> stringList = new ArrayList<>(100);
+        List<String> stringList1 = new LinkedList<>(stringList);
 
         //追加
         stringList.add("Tom");

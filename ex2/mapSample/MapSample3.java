@@ -8,7 +8,7 @@ import java.util.Map;
 
 class MapSample3 {
 
-    static void memberToMap(Map<Integer,Integer> map,List<Member> memberList) {
+    static void memberToMap(Map<Integer,Member> map,List<Member> memberList) {
         for (Member m:memberList) {
             map.put(m.getId(),m);
         }

@@ -25,7 +25,7 @@ class q17 {
     /**
      * マップに変換する
      * @param memberList List<Member> 変換元List
-     * @return Map<Integer,Me,ber> 変換したMap
+     * @return Map<Integer,Member> 変換したMap
      */
     static Map<Integer,Member> listToMap(List<Member> memberList) {
         Map<Integer,Member> memberMap = new HashMap<>();

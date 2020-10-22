@@ -23,6 +23,7 @@ class MapSample1 {
         map1.put("apple","りんご");
         map1.put("banana","バナナ");
 
+
         //表示
         System.out.println(map1);
 

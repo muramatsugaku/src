@@ -94,6 +94,6 @@ public class StringSample1 {
 
         //リピートする
         System.out.println("ねこ".repeat(10));
-        
+
     }
 }

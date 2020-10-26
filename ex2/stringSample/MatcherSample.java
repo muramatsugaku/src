@@ -1,10 +1,10 @@
-package stringSample;
+package ex2.stringSample;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-class Sample3 {
+class MatcherSample {
     //正規表現に一致したフレーズの出現数をカウントする
     static void regXTest(String sentence,String regX) {
         Pattern pattern = Pattern.compile(regX);

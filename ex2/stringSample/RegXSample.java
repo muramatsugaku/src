@@ -1,4 +1,4 @@
-package stringSample;
+package ex2.stringSample;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -25,7 +25,7 @@ class Q18 {
         e4.setEarnings(220,130,300,250,300,100,200,300,130,300,180,200);
         e5.setEarnings(120,80,100,150,100,120,190,170,130,200,150,200);
 
-        //従業員の支店への登録
+        //従業員の支店への登録1
         branch.addEmployee(e1);
         branch.addEmployee(e2);
         branch.addEmployee(e3);
@@ -71,7 +71,7 @@ class Q18 {
 
         System.out.println(String.format("\n%sの売上",Month.APRIL.getNumber()));
         for (Employee e:employeeList) {
-            MonthRank monthRank = new MonthRank(e.getName(),e.getEarnings(Month.APRIL));
+            MonthRank monthRank = new MonthRank(e.getName(),e.getEarningsOfMonth(Month.APRIL));
             monthRankList.add(monthRank);
         }
         monthRankList.sort(Collections.reverseOrder(Comparator.comparing(MonthRank::getEarnings)));

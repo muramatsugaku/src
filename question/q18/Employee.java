@@ -52,7 +52,12 @@ class Employee {
         earningsList.addAll(Arrays.asList(earnings));
     }
 
-    public int getEarnings(Month month) {
+    /**
+     * 指定した月の売り上げを取得する
+     * @param month 月
+     * @return int 指定した月の売上
+     */
+    public int getEarningsOfMonth(Month month) {
         return earningsList.get(month.ordinal());
     }
 

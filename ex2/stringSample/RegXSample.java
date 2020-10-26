@@ -14,13 +14,14 @@ class RegXSample {
         //郵便番号リスト
         List<String> zipList = new ArrayList<>();
         Collections.addAll(zipList,"064-0809","12-345","1b9-t123");
+
         //検査する
-        zipList.forEach(s -> {
-                    if (zip.matcher(s).matches()) {
-                        System.out.println(s + ":true");
-                    } else {
-                        System.out.println(s + ":false");
-                    }
-                });
+        for (String s:zipList) {
+            if (zip.matcher(s).matches()) {
+                System.out.println(s + ":true");
+            } else {
+                System.out.println(s + ":false");
+            }
+        }
     }
 }

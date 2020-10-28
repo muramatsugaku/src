@@ -16,6 +16,9 @@ class DateTimeSample4 {
             System.out.println(date.withDayOfMonth(date.lengthOfMonth()));//各月末（年月日）
         }
 
+        //今月の月末の日を求める
+        System.out.println(LocalDate.now().withDayOfMonth(LocalDate.now().lengthOfMonth()));
+
         /*
         //参考
         IntStream.range(1,13)

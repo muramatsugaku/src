@@ -1,7 +1,6 @@
 package question.q20;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,10 +21,23 @@ import java.util.Map;
  */
 
 class Q20 {
+    /**
+     * 学生をMapに格納する
+     * key 学生番号
+     * value 学生のインスタンス
+     * @param student Student 学生のインスタンス
+     * @param studentMap Map 学生を格納するMap
+     */
     public static void addStudentMap(Student student,Map<Integer,Student> studentMap){
         studentMap.put(student.getId(),student);
     }
 
+    /**
+     * テストのインスタンスのセッター
+     *
+     * @param test Test テストのインスタンス
+     * @param studentMap Map 学生を格納するMap
+     */
     public static void setTest(Test test,Map<Integer,Student> studentMap) {
         studentMap.get(test.getId()).setTestset(test.getTime(),test);
     }
@@ -84,10 +96,5 @@ class Q20 {
         for (Student s:studentList) {
             System.out.println(s.getResult(Times.TWO));
         }
-
-
-
-
-
     }
 }

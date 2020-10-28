@@ -1,5 +1,7 @@
 package question.q20;
-
+/*
+    性別を表す列挙型
+ */
 enum Gender {
     MEN("男"),
     WOMEN("女");

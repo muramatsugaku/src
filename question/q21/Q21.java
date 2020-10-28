@@ -18,10 +18,6 @@ package question.q21;
 
  */
 
-import java.time.LocalDate;
-import java.time.Month;
-
-
 class Q21 {
 
 }

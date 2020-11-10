@@ -19,7 +19,7 @@ class ExceptionSample4 {
         //BufferedWriter https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/io/BufferedWriter.html
 
         try(BufferedReader bufferedReader = Files.newBufferedReader(in);
-            BufferedWriter bufferedWriter = Files.newBufferedWriter(out);) {
+            BufferedWriter bufferedWriter = Files.newBufferedWriter(out)) {
 
             String line = bufferedReader.readLine();//1行読み込む
             while (line != null) {//line == null EOF(EndOfFile)

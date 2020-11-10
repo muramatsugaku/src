@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 class Q28 {
-    public static <Lits> void main(String[] args) {
+    public static void main(String[] args) {
         //学生リスト
         List<Student> studentList = new ArrayList<>();
 

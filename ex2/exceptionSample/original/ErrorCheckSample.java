@@ -52,7 +52,7 @@ class ErrorCheckSample {
             } catch (CreateException e) {//作成時例外があれば
                 if (e.isNameError()) System.out.println("名前が入力されていません");
                 if (e.isJapError()) System.out.println("国語の得点が範囲外です");
-                if (e.isMathError()) System.out.println("数がの得点が範囲外です");
+                if (e.isMathError()) System.out.println("数学の得点が範囲外です");
                 if (e.isEngError()) System.out.println("英語の得点が範囲外です");
                 System.out.println("再入力してください");
                 hasError = true;

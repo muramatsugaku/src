@@ -11,8 +11,6 @@ class CreateException extends RuntimeException {
     private boolean engError = false;
 
     //コンストラクタ群（自動生成）
-
-
     public CreateException(boolean nameError, boolean japError, boolean mathError, boolean engError) {
         this.nameError = nameError;
         this.japError = japError;

@@ -21,7 +21,7 @@ class ErrorCheckSample {
         if (math < 0 || math > 100) mathError = true;//数学のチェック
         if (eng < 0 || eng > 100) engError = true;//英語のチェック
 
-        if (nameError || japError || mathError || japError) {//どれかエラーがあれば
+        if (nameError || japError || mathError || engError) {//どれかエラーがあれば
             throw new CreateException(nameError,japError,mathError,engError);//作成時例外をスロー
         }
 
@@ -52,7 +52,7 @@ class ErrorCheckSample {
             } catch (CreateException e) {//作成時例外があれば
                 if (e.isNameError()) System.out.println("名前が入力されていません");
                 if (e.isJapError()) System.out.println("国語の得点が範囲外です");
-                if (e.isMathError()) System.out.println("数がの得点が範囲外です");
+                if (e.isMathError()) System.out.println("数学の得点が範囲外です");
                 if (e.isEngError()) System.out.println("英語の得点が範囲外です");
                 System.out.println("再入力してください");
                 hasError = true;

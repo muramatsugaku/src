@@ -30,26 +30,54 @@ class Student{
         return gender;
     }
 
+    public String getGenderName() {
+        return gender.getName();
+    }
+
+    /**
+     * テスト情報のゲッター
+     * @return Optional<Test> テスト情報 nullの場合あり
+     */
     public Optional<Test> getTest() {
         return Optional.ofNullable(test);
     }
 
+    /**
+     * 学年の取得
+     * @return int 学年
+     */
     public int getGradeNumber() {
         return id / 1000;
     }
 
+    /**
+     * クラスの取得
+     * @return int クラス
+     */
     public int getClassNumber(){
         return id / 100 % 10;
     }
 
+    /**
+     * 出席番号の取得
+     * @return int 出席番号
+     */
     public int getNumber() {
         return id % 100;
     }
 
+    /**
+     * テスト情報のセッター
+     * @param test
+     */
     public void setTest(Test test) {
         this.test = test;
     }
 
+    /**
+     * デバッグ用
+     * @return String テスト情報の文字列表現
+     */
     @Override
     public String toString() {
         return "Student{" +

@@ -3,10 +3,8 @@ package ex2.streamSample;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 class StreamSample7 {
     public static void main(String[] args) {
@@ -26,7 +24,7 @@ class StreamSample7 {
                 new Data("104","えええ"),
                 new Data("103","かかか")
         );
-        
+
         Map<String,Data> dataMap = dataList.stream()
                 .collect(Collectors.toMap(d -> d.getId(),d -> d));
 

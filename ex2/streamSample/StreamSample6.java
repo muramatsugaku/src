@@ -26,7 +26,7 @@ class StreamSample6 {
 
         System.out.println("グループ分け");
         group.entrySet().stream()
-                .map(e -> e.getKey() + ":"+ e.getValue().toString())
+                .map(e -> e.getKey() + ":" + e.getValue().toString())
                 .forEach(System.out::println);
 
         //グループごとの合計

@@ -25,4 +25,8 @@ class Data {
                 '}';
     }
 
+    public String toCsv() {
+        return String.join(",",id,name);
+    }
+
 }

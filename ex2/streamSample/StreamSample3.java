@@ -5,7 +5,7 @@ import java.util.OptionalDouble;
 
 class StreamSample3 {
     public static void main(String[] args) {
-        //ArrayListの宣言
+        //配列の宣言
         int[] intArray = {1,2,3,4,5};
 
         /*
@@ -14,8 +14,8 @@ class StreamSample3 {
             sum
             https://docs.oracle.com/javase/jp/11/docs/api/java.base/java/util/stream/IntStream.html#sum()
          */
-        int sum = Arrays.stream(intArray).
-                skip(2)//3,4,5
+        int sum = Arrays.stream(intArray)
+                .skip(2)//3,4,5
                 .sum();//12
         System.out.println(sum);//12
 

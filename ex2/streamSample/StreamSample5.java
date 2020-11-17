@@ -21,7 +21,7 @@ class StreamSample5 {
 
         try (Stream<String> lines = Files.lines(path)) {
             dataList = lines
-                    .map(s -> toData(s))
+                    .map(StreamSample5::toData)
                     .collect(Collectors.toList());
         } catch (IOException e) {
             e.printStackTrace();

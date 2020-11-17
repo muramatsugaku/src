@@ -1,7 +1,6 @@
 package ex2.streamSample;
 
 import java.util.Arrays;
-import java.util.Optional;
 import java.util.OptionalDouble;
 
 class Ex {
